@@ -316,6 +316,66 @@ nav{
     font-weight: 400;
     color: gray;
 }
+.footer{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.footer_container{
+    display: grid;
+    gap: 4rem 2rem;
+}
+.footer_logo{
+    margin-bottom: 1rem;
+}
+.footer_logo .logo{
+    color: var(--white);
+}
+.footer_col p{
+    margin-bottom: 2rem;
+    color: var(--extra-light);
+    opacity: 0.8;
+}
+.footer_socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer_socials a{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.footer_socials a:hover{
+    color: var(--text-light);
+    opacity: 0.7;
+}
+.footer_col h4{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--white);
+}
+.footer_links{
+    display: grid;
+    gap: 1rem;
+}
+.footer_links a{
+    color: var(--extra-light);
+    opacity: 0.8;
+}
+.footer_links a:hover{
+    color: var(--text-light);
+    opacity: 0.7;
+}
+.footer_bar{
+    text-align: center;
+    color: gray;
+    padding: 1rem;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+
 @media (width > 500px) {
     .deals_container{
         grid-template-columns: repeat(2,1fr);
@@ -324,6 +384,9 @@ nav{
         grid-template-columns: repeat(2, 1fr);
     }
     .product_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer_container{
         grid-template-columns: repeat(2,1fr);
     }
 }
@@ -428,6 +491,9 @@ nav{
         grid-template-columns: repeat(2,1fr);
         align-items: center;
         text-align: left;
+    }
+    .footer_container{
+        grid-template-columns: repeat(4,1fr);
     }
 }
 
